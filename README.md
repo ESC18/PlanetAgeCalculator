@@ -72,5 +72,5 @@ Copyright (c) 2023 _Elijah Shawn Cartwright_
 7. Add "jest": true in .eslintrc.
 8. In package.json include single line comments that tell the user things they should change: name, version, description, main if needed.
 9. In README.md add additional single line comments on things that should be changed if needed.
-10. Add Text document that provides additional info to user and access to resources for helping with support.
+10. Add Text document that provides additional info to user and access to resources for helping with support. As well as a github pages site that helps display        documentation and a video on usage.
 -->
