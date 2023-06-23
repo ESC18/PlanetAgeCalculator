@@ -55,3 +55,22 @@ Provide link for GH-Pages here
 ## Licensing:
 MIT
 Copyright (c) 2023 _Elijah Shawn Cartwright_
+
+
+
+
+
+
+
+<!--FOR FUTURE UPDATE:
+1. State additional info in index.js to NOT insert additional functions or tests for index.js
+2. remove index.test.js OR add text saying errors could be caused by running tests and functions within index.js due to imports being present.
+3. Fix image error - images do not appear.
+4. Provide link to image with font examples.
+5. Add additional styling for styles.css (center and clean up hello world text), base styles for a basic site (very simple styling), additional stock images. and     base slightly more extensive HTML setup (with things commented out).
+6. Add quick links/resources folder in assets which include good resources and links to documentation to help with coding.
+7. Add "jest": true in .eslintrc.
+8. In package.json include single line comments that tell the user things they should change: name, version, description, main if needed.
+9. In README.md add additional single line comments on things that should be changed if needed.
+10. Add Text document that provides additional info to user and access to resources for helping with support.
+-->
