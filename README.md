@@ -17,6 +17,8 @@
 * Clean Webpack-Plugin
 * Babel/core
 * Babel/plugin transform modules
+* HTML Loader
+* File Loader
 
 <!--OPTIONAL TECHNOLOGIES:
 * Adobe XD
