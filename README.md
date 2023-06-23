@@ -18,12 +18,13 @@
 * Babel/core
 * Babel/plugin transform modules
 
-<!--OPTIONAL TECHNOLOGIES:-->
+<!--OPTIONAL TECHNOLOGIES:
 * Adobe XD
 * Chrome & Firefox Devtools
 * Visual Studio Code
 * Bootstrap
 * Google fonts (remove fonts stylesheet in order for this to be optional).
+-->
 
 ## Description of Application:
 Put description of project here
