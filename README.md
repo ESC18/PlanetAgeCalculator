@@ -67,7 +67,7 @@ Copyright (c) 2023 _Elijah Shawn Cartwright_
 2. remove index.test.js OR add text saying errors could be caused by running tests and functions within index.js due to imports being present.
 3. Fix image error - images do not appear.
 4. Provide link to image with font examples.
-5. Add additional styling for styles.css (center and clean up hello world text), base styles for a basic site (very simple styling), additional stock images. and     base slightly more extensive HTML setup (with things commented out).
+5. Add additional styling for styles.css (center and clean up hello world text), base styles for a basic site (very simple styling), additional stock images. and     base slightly more extensive HTML setup (with things commented out). Add function that auto generates html/css.
 6. Add quick links/resources folder in assets which include good resources and links to documentation to help with coding.
 7. Add "jest": true in .eslintrc.
 8. In package.json include single line comments that tell the user things they should change: name, version, description, main if needed.
