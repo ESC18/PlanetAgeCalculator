@@ -43,6 +43,7 @@ export function initializer () {
             let titleDiv = document.getElementById("titleDiv");
             displayInfo(currentAgeInput, pastAgeInput, this.value, this.innerText);
             titleDiv.innerText = this.innerText;
+            titleDiv.style.color = this.getAttribute('data-color');
         });
     });
 }

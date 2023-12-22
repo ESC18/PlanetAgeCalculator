@@ -1,9 +1,10 @@
-/*This is the main Stylesheet - startup styling applied: remove startup styling as needed.*/
+/* This is the main Stylesheet - startup styling applied: remove startup styling as needed. */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
 body {
     background-color: #151515;
     color: whitesmoke;
@@ -15,7 +16,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,12 +27,13 @@ body {
     display: flex;
     top: 85%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
     flex-direction: row;
     align-items: center;
 }
 
+/* Common button styles */
 button {
     margin: 40px;
     width: 100px;
@@ -39,8 +41,23 @@ button {
     border-radius: 50%;
     height: 100px;
     color: white;
+    font-size: 20px;
+    font-family: Josefin sans;
     z-index: 5;
+    border: none;
 }
+
+/* Planet-specific button styles */
+#one {background: linear-gradient(to right, #b3b3cc, #8080a0);}
+#two {background: linear-gradient(to right, #e6e6ff, #b3b3cc);}
+#three {background: linear-gradient(to right, #99cc99, #66cc66);}
+#four {background: linear-gradient(to right, #ff6666, #ff9999);}
+#five {background: linear-gradient(to right, #ffcc99, #ff9966);}
+#six {background: linear-gradient(to right, #e6e6e6, #cccccc);}
+#seven {background: linear-gradient(to right, #66ccff, #99ccff);}
+#eight {background: linear-gradient(to right, #3366cc, #666699);}
+#nine {background: linear-gradient(to right, #999999, #cccccc);}
+
 
 input {
     margin: 20px;
@@ -57,7 +74,7 @@ input {
     position: absolute;
     top: 75%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 70px;
     border-bottom: white 5px solid;
     width: 480px;
@@ -84,9 +101,9 @@ input {
     left: 50%;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    overflow-y: hidden;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
 }
