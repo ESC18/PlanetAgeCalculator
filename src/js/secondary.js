@@ -13,3 +13,32 @@ export default class Blank {
         return this.here * this.there;
     }
 */
+
+function planetAgeCalc (currentAge, pastAge, planetMult) {
+    if (pastAge) {
+        let x = currentAge - pastAge;
+        return x * planetMult;
+    }
+    return currentAge * planetMult;
+}
+
+
+
+
+
+function displayInfo (currentAge, pastAge, planetMult) {
+    let result = planetAgeCalc (currentAge, pastAge, planetMult);
+}
+
+
+
+
+function initializer () {
+    let currentAgeInput;
+    let pastAgeInput;
+    document.querySelectorAll("button").forEach(button => {
+        button.addEventListener('click', function () {
+            displayInfo(currentAgeInput, pastAgeInput, this.value);
+        });
+    });
+}
