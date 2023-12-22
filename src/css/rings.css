@@ -1,0 +1,48 @@
+.ringOne {
+    width: 490px;
+    height: 490px;
+}
+
+.ringTwo {
+    width: 850px;
+    height: 850px;
+}
+
+.ringThree {
+    width: 1200px;
+    height: 1200px;
+}
+
+.ringFour {
+    width: 1550px;
+    height: 1550px;
+}
+
+.ringFive {
+    width: 1910px;
+    height: 1910px;
+}
+
+.ringSix {
+    width: 2275px;
+    height: 2275px;
+}
+
+.ringSeven {
+    width: 2625px;
+    height: 2625px;
+}
+
+.ringEight {
+    width: 3000px;
+    height: 3000px;
+}
+
+.ringNine {
+    width: 3350px;
+    height: 3350px;
+}
+
+.ring {
+    overflow: hidden;
+}
