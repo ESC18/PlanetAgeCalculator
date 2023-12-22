@@ -1,4 +1,3 @@
-/* This is the main Stylesheet - startup styling applied: remove startup styling as needed. */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +32,6 @@ body {
     align-items: center;
 }
 
-/* Common button styles */
 button {
     margin: 40px;
     width: 100px;
@@ -47,7 +45,6 @@ button {
     border: none;
 }
 
-/* Planet-specific button styles */
 #one {background: linear-gradient(to right, #b3b3cc, #8080a0);}
 #two {background: linear-gradient(to right, #e6e6ff, #b3b3cc);}
 #three {background: linear-gradient(to right, #99cc99, #66cc66);}
