@@ -19,7 +19,7 @@ function planetAgeCalc (currentAge, pastAge, planetMult) {
         let x = currentAge - pastAge;
         return (x * 365) / planetMult;
     }
-    return (currentAge * 365) / planetMult;
+    return ((currentAge * 365) / planetMult);
 }
 
 
@@ -28,7 +28,8 @@ function planetAgeCalc (currentAge, pastAge, planetMult) {
 
 function displayInfo (currentAge, pastAge, planetMult, innerText) {
     let result = planetAgeCalc (currentAge, pastAge, planetMult);
-    console.log(result, innerText);
+    let resultDiv = document.getElementById("resultDiv");
+    resultDiv.innerText = parseFloat(result).toFixed(3) + " Years";
 }
 
 
