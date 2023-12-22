@@ -15,30 +15,35 @@ export default class Blank {
 */
 
 function planetAgeCalc (currentAge, pastAge, planetMult) {
-    if (pastAge) {
+    if (pastAge > 0) {
         let x = currentAge - pastAge;
-        return x * planetMult;
+        return (x * 365) / planetMult;
     }
-    return currentAge * planetMult;
+    return (currentAge * 365) / planetMult;
 }
 
 
 
 
 
-function displayInfo (currentAge, pastAge, planetMult) {
+function displayInfo (currentAge, pastAge, planetMult, innerText) {
     let result = planetAgeCalc (currentAge, pastAge, planetMult);
+    console.log(result, innerText);
 }
 
 
 
 
-function initializer () {
-    let currentAgeInput;
-    let pastAgeInput;
+export function initializer () {
     document.querySelectorAll("button").forEach(button => {
         button.addEventListener('click', function () {
-            displayInfo(currentAgeInput, pastAgeInput, this.value);
+            let currentAgeInput = document.getElementById("currentAge").value;
+            let pastAgeInput = document.getElementById("pastAge").value;
+            let titleDiv = document.getElementById("titleDiv");
+            displayInfo(currentAgeInput, pastAgeInput, this.value, this.innerText);
+            titleDiv.innerText = this.innerText;
         });
     });
 }
+
+initializer ();
