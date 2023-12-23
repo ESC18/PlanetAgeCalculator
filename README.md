@@ -29,31 +29,24 @@
 -->
 
 ## Description of Application:
-Put description of project here
+This website was built for the purpose of creating and working with TDD via Jest at Epicodus. It takes in 2-3 user inputs (1 to 2 numbers, and a planet selection) and displays to the user their
+age if they lived on said selected planet. You can also enter a second number (that being a past age) and it will subtract the past age from your current age to determine 
 
 ## Setup and installation requirements/guide:
-1. Clone the repository _""_ to your device through this link: https://github.com/
+1. Clone the repository _"PlanetAgeCalculator"_ to your device through this link: https://github.com/ESC18/PlanetAgeCalculator
 2. Select 'Code' in the repo page.
 3. Copy the provided HTTPS Link.
 4. Navigate through Git bash to your desired folder to place the project.
-5. Do the necessary git commands to initialize the project and then proceed to do: 'git clone https://github.com/.git'
-6. Happy Coding!
+5. Do the necessary git commands to initialize the project and then proceed to do: 'git clone https://github.com/ESC18/PlanetAgeCalculator'
+6. Install all packages with _$ npm install_.
+7. Build the project using webpack with _$ npm run build_.
+8. Start a development server with _$ npm run start_.
+9. Lint JS files in the src folder with _$ npm run lint_.
+10. Run tests with Jest using _$ npm run test_.
 
-<!--
-Ex of setup and installation:    
-    Installing all packages with $ npm install.
-    Building the project using webpack with $ npm run build
-    Starting a development server with $ npm run start
-    Linting JS files in the src folder with $ npm run lint
-    Running tests with Jest using $ npm run test
--->
 
 ## Known Bugs:
-* Put known bugs
-* here
-
-## Github Pages:
-Provide link for GH-Pages here
+* Site is not responsive. Best used with a 1920x1080p monitor - Site functionality is not dependant upon this.
 
 
 ## Licensing:

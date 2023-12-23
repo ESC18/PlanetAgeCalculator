@@ -1,7 +1,7 @@
 //BUSINESS LOGIC ______________________________________________________________________________________________________________
 
 export function planetAgeCalc(currentAge, pastAge, planetMult) {
-    if (parseFloat(currentAge) < 999999999 || parseFloat(pastAge) < 999999999) {
+    if (parseFloat(currentAge) <= 999999999 || parseFloat(pastAge) <= 999999999) {
         if (currentAge < 0 || pastAge < 0) {
             throw new Error("Invalid Number: Input must be positive.")
         }
