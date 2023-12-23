@@ -1,31 +1,38 @@
 //BUSINESS LOGIC ______________________________________________________________________________________________________________
 
 export function planetAgeCalc(currentAge, pastAge, planetMult) {
-    if (currentAge < 0 || pastAge < 0) {
-        throw new Error("Invalid Number: Numbers must be positive.")
+    if (parseFloat(currentAge) < 999999999 || parseFloat(pastAge) < 999999999) {
+        if (currentAge < 0 || pastAge < 0) {
+            throw new Error("Invalid Number: Input must be positive.")
+        }
+        else if (pastAge > 0) {
+            let x = currentAge - pastAge;
+            return (x * 365) / planetMult;
+        }
+        return ((currentAge * 365) / planetMult);
+    } else {
+        throw new Error("Invalid Number: Input must be less than or equal to 999999999");
     }
-    else if (pastAge > 0) {
-        let x = currentAge - pastAge;
-        return (x * 365) / planetMult;
-    }
-    return ((currentAge * 365) / planetMult);
 }
 
 //UI LOGIC ____________________________________________________________________________________________________________________
 
+function styleResultDiv(resultDiv, isError) {
+    resultDiv.style.fontSize = isError ? "15px" : "45px";
+    resultDiv.style.top = isError ? "91.7%" : "94%";
+    resultDiv.style.color = isError ? "red" : "white";
+}
+
 function displayInfo(currentAge, pastAge, planetMult) {
     let resultDiv = document.getElementById("resultDiv");
     try {
-        resultDiv.style.color = "white";
-        resultDiv.style.fontSize = "50px";
-        resultDiv.style.top = "94%";
         let result = planetAgeCalc(currentAge, pastAge, planetMult);
-        resultDiv.innerText = parseFloat(result).toFixed(3) + " Years";
+        let formattedResult = parseFloat(result).toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+        resultDiv.innerText = formattedResult + " Years";
+        styleResultDiv(resultDiv, false);
     } catch (error) {
-        resultDiv.style.color = "red";
-        resultDiv.style.fontSize = "15px";
-        resultDiv.style.top = "91.7%";
         resultDiv.innerText = "Error: " + error.message;
+        styleResultDiv(resultDiv, true);
     }
 }
 
