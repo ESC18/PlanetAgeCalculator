@@ -38,4 +38,8 @@ describe("planetAgeCalc", () => {
         const result = planetAgeCalc(1000000,0,87.97);
         expect(parseFloat(result.toFixed(3))).toEqual(4149141.753);
     });
+    test("The planetAgeCalc should take in numbers from the user that include decimals and will still function properly", () => {
+        const result = planetAgeCalc(100.55,0,87.97);
+        expect(parseFloat(result.toFixed(3))).toEqual(417.196);
+    });
 })
