@@ -104,3 +104,13 @@ textarea:focus,
 input:focus {
     outline: none;
 }
+
+p {
+    color: #FF7700;
+    font-family: permanent marker;
+    font-size: 75px;
+    z-index: 200;
+    position: absolute;
+    top: 215%;
+    right: 2%;
+}
