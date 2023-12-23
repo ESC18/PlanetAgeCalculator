@@ -1,4 +1,4 @@
-# Title goes here
+# Planet Age Calculator
 
 #### By Elijah Shawn Cartwright
 ## Technologies used:
@@ -27,10 +27,14 @@
 * Bootstrap
 * Google fonts (remove fonts stylesheet in order for this to be optional).
 -->
+## IMPORTANT:
+This site currently works via utilization of Datetime, which enables the user to enter their birthday or a specific date and it will output the proper age for the user. This also allows for a more accurate result.
+Naturally though, it is a lot more difficult to test and use Jest for this project since the data values are constantly changing. So if you want to checkout the project on the older system where you manually enter your age, the commit is: "bb1dcd5"
+For that system, tests are more detailed, and there is cleaner code; I was forced to move things to weird locations due to Jest having a lot of issues with the DOM.
 
 ## Description of Application:
 This website was built for the purpose of creating and working with TDD via Jest at Epicodus. It takes in 2-3 user inputs (1 to 2 numbers, and a planet selection) and displays to the user their
-age if they lived on said selected planet. You can also enter a second number (that being a past age) and it will subtract the past age from your current age to determine 
+age if they lived on said selected planet. You can also enter a second number (that being a past age) and it will subtract the past age from your current age to determine the amount of time between the two dates on varying planets.
 
 ## Setup and installation requirements/guide:
 1. Clone the repository _"PlanetAgeCalculator"_ to your device through this link: https://github.com/ESC18/PlanetAgeCalculator
