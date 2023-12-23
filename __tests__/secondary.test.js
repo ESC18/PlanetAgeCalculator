@@ -34,4 +34,8 @@ describe("planetAgeCalc", () => {
         const result = planetAgeCalc(0,0,87.97);
         expect(parseFloat(result.toFixed(3))).toEqual(0);
     });
+    test("The planetAgeCalc should take in numbers from the user that are incredibly high and be able to process them", () => {
+        const result = planetAgeCalc(1000000,0,87.97);
+        expect(parseFloat(result.toFixed(3))).toEqual(4149141.753);
+    });
 })
