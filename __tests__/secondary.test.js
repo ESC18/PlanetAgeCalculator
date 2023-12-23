@@ -19,8 +19,12 @@ describe("Blank", () => {
 import { planetAgeCalc } from "../src/js/secondary.js";
 
 describe("planetAgeCalc", () => {
-    test("The planetAgeCalc should take in TWO values, the current age of the user and the planet Multiplier", () => {
+    test("The planetAgeCalc should take in TWO positive values, the current age of the user and the planet Multiplier", () => {
         const result = planetAgeCalc(10,0,87.97);
         expect(parseFloat(result.toFixed(3))).toEqual(41.491);
+    });
+    test("The planetAgeCalc should take in THREE positive values, the current age of the user, a past age, and the planet Multiplier", () => {
+        const result = planetAgeCalc(10,5,87.97);
+        expect(parseFloat(result.toFixed(3))).toEqual(20.746);
     });
 })

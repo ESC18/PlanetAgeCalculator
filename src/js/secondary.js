@@ -1,7 +1,10 @@
 //BUSINESS LOGIC ______________________________________________________________________________________________________________
 
-export function planetAgeCalc (currentAge, pastAge, planetMult) {
-    if (pastAge > 0) {
+export function planetAgeCalc(currentAge, pastAge, planetMult) {
+    if (currentAge < 0 || pastAge < 0) {
+        throw new Error("Invalid Number: Numbers must be positive.")
+    }
+    else if (pastAge > 0) {
         let x = currentAge - pastAge;
         return (x * 365) / planetMult;
     }
@@ -10,14 +13,24 @@ export function planetAgeCalc (currentAge, pastAge, planetMult) {
 
 //UI LOGIC ____________________________________________________________________________________________________________________
 
-function displayInfo (currentAge, pastAge, planetMult, innerText) {
-    let result = planetAgeCalc (currentAge, pastAge, planetMult);
+function displayInfo(currentAge, pastAge, planetMult) {
     let resultDiv = document.getElementById("resultDiv");
-    resultDiv.innerText = parseFloat(result).toFixed(3) + " Years";
+    try {
+        resultDiv.style.color = "white";
+        resultDiv.style.fontSize = "50px";
+        resultDiv.style.top = "94%";
+        let result = planetAgeCalc(currentAge, pastAge, planetMult);
+        resultDiv.innerText = parseFloat(result).toFixed(3) + " Years";
+    } catch (error) {
+        resultDiv.style.color = "red";
+        resultDiv.style.fontSize = "15px";
+        resultDiv.style.top = "91.7%";
+        resultDiv.innerText = "Error: " + error.message;
+    }
 }
 
 
-function initializer () {
+function initializer() {
     document.querySelectorAll("button").forEach(button => {
         button.addEventListener('click', function () {
             let currentAgeInput = document.getElementById("currentAge").value;
@@ -30,6 +43,6 @@ function initializer () {
     });
 }
 
-initializer ();
+initializer();
 
 //_____________________________________________________________________________________________________________________________
