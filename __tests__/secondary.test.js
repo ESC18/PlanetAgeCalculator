@@ -27,4 +27,7 @@ describe("planetAgeCalc", () => {
         const result = planetAgeCalc(10,5,87.97);
         expect(parseFloat(result.toFixed(3))).toEqual(20.746);
     });
+    test("The planetAgeCalc should take in ONE or more NEGATIVE values, and respond with the appropiate error message", () => {
+        expect(() => planetAgeCalc(-10, 5, 87.97)).toThrowError("Invalid Number: Numbers must be positive.");
+    });
 })
